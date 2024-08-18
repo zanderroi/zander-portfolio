@@ -7,7 +7,7 @@
         <h1 class="text-white text-3xl">Hi, I'm Zander!</h1>
      
     </div>
-    <!-- <img src="/assets/img/zandercir.png" class="mx-auto" style="height: 100%;" /> -->
+
   </div>
   <div class="h-80 bg-indigo-700"></div>
 </template>
