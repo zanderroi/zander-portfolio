@@ -5,5 +5,6 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/global.css'
   ],
+  plugins: ['~/plugins/fontawesome.js'],
   devtools: { enabled: true }
 })

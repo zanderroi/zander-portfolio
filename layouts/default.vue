@@ -9,7 +9,7 @@
         <div class="flex">
           <div class="border-r pt-4 border-gray-500">
             <div
-              class="relative z-20 border-b border-orange-600 px-4 pr-20 text-left"
+              class="relative z-20 border-b-4 border-orange-600 px-4 pr-20 text-left"
             >
               <NuxtLink
                 to="/"
