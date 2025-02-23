@@ -20,7 +20,7 @@
             </div>
           </div>
 
-          <div class="border-r pt-4 border-gray-500">
+          <!-- <div class="border-r pt-4 border-gray-500">
             <div
               class="relative z-20 px-4 text-left"
             >
@@ -57,10 +57,10 @@
                 _about-me
               </NuxtLink>
             </div>
-          </div>
+          </div> -->
 
 
-          <div class="border-r pt-4 border-gray-500">
+          <!-- <div class="border-r pt-4 border-gray-500">
             <div
               class="relative z-20 px-4 text-left"
             >
@@ -71,7 +71,7 @@
                 _contact-me
               </NuxtLink>
             </div>
-          </div>
+          </div> -->
 
 
 
