@@ -23,7 +23,7 @@ onMounted(() => {
   renderer.setSize(canvasContainer.value.clientWidth, canvasContainer.value.clientHeight)
   canvasContainer.value.appendChild(renderer.domElement)
 
-  const radius = 5
+  const radius = 4
 
   // Group for horizontal rotation (Y-axis)
   const horizontalGroup = new THREE.Group()
