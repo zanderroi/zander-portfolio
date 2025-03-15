@@ -1,5 +1,6 @@
 <template>
   <div class="h-screen flex flex-col justify-center items-center p-2">
+  <p class="text-gray-300 text-4xl">WEBSITE IN PROGRESS :)</p>
     <div class="flex flex-row space-x-4 justify-center items-center p-4 md:p-4">
       <div
         class="bg-white p-8 rounded-xl max-w-3xl animate-slideInLeft h-auto shadow-xl shadow-gray-300"
