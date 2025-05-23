@@ -136,7 +136,7 @@
       class="flex flex-wrap justify-evenly items-center mt-4 w-full space-y-2"
     >
       <div
-        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center"
+        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
       >
         <img :src="'icons/pr.png'" class="w-20" alt="" />
         <p class="text-center text-xs">Adobe Premiere Pro</p>
@@ -147,7 +147,7 @@
       </div>
 
       <div
-        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center"
+        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
       >
         <img :src="'icons/ps.png'" class="w-20" alt="" />
         <p class="text-center">Adobe Photshop</p>
@@ -157,7 +157,7 @@
         </p>
       </div>
       <div
-        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center"
+        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
       >
         <img :src="'icons/canva.png'" class="w-20" alt="" />
         <p class="text-center">Canva</p>
@@ -167,7 +167,7 @@
         </p>
       </div>
       <div
-        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center"
+        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
       >
         <img :src="'icons/figma.webp'" class="w-20" alt="" />
         <p class="text-center">Figma</p>
@@ -177,7 +177,7 @@
         </p>
       </div>
       <div
-        class="space-y-1 w-52 h-64 p-7 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center"
+        class="space-y-1 w-52 h-64 p-7 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
       >
         <img :src="'icons/vue.png'" class="w-20" alt="" />
         <p class="text-center">VueJS</p>
@@ -188,7 +188,7 @@
       </div>
 
       <div
-        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center"
+        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
       >
         <img :src="'icons/vue.png'" class="w-20" alt="" />
         <p class="text-center">VueJS</p>
