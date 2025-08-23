@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-100">
-    <header>
+    <header class="sticky top-0 bg-white shadow-sm z-50">
     <div class="flex items-center justify-between p-4">
       <div>
         <span class="text-xl font-bold text-orange-600">ZANDER ROI TABELONA</span>

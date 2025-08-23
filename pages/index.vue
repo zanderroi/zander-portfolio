@@ -1,6 +1,8 @@
 <template>
   <div class="flex flex-col justify-center items-center p-2">
-    <p class="text-gray-300 text-md">WEBSITE UNDER MAINTENANCE :)</p>
+    <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded mb-4">
+      🚧 Website under construction. Updates coming soon!
+    </div>
     <div class="flex flex-row space-x-4 justify-center items-center p-2 md:p-4">
       <div
         class="bg-white p-4 rounded-xl max-w-3xl animate-slideInLeft h-auto shadow-xl shadow-gray-300"
@@ -128,75 +130,61 @@
   </div>
 
   <div class="flex flex-col items-center">
-    <h3 class="text-4xl mt-8 text-center font-semibold text-gray-800">
+    <h3 class="text-4xl mt-8 mb-4 text-center font-semibold text-gray-800">
       Creative & Marketing Skills
     </h3>
 
     <div
-      class="flex flex-wrap justify-evenly items-center mt-4 w-full space-y-2"
+      class="flex flex-wrap justify-center items-center md:flex-row flex-col space-y-6 md:space-y-4 md:space-x-4"
     >
-      <div
-        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
-      >
-        <img :src="'icons/pr.png'" class="w-20" alt="" />
-        <p class="text-center text-xs">Adobe Premiere Pro</p>
-        <p class="text-xs">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
-          repudiandae blanditiis quo,
-        </p>
+      <div class="flex flex-row space-x-4 justify-center items-center">
+        <img :src="'icons/pr.png'" class="w-16" alt="" />
+        <div>
+          <p class="text-center">Premiere Pro</p>
+          <div class="flex justify-center">
+            <span v-for="n in 5" :key="n" class="text-yellow-500 star">
+              <i :class="n <= 5 ? 'fas fa-star' : 'far fa-star'"></i>
+            </span>
+          </div>
+        </div>
       </div>
 
-      <div
-        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
-      >
+      <div class="flex flex-row space-x-4 justify-center items-center">
         <img :src="'icons/ps.png'" class="w-20" alt="" />
-        <p class="text-center">Adobe Photshop</p>
-        <p class="text-xs">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
-          repudiandae blanditiis quo,
-        </p>
-      </div>
-      <div
-        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
-      >
-        <img :src="'icons/canva.png'" class="w-20" alt="" />
-        <p class="text-center">Canva</p>
-        <p class="text-xs">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
-          repudiandae blanditiis quo,
-        </p>
-      </div>
-      <div
-        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
-      >
-        <img :src="'icons/figma.webp'" class="w-20" alt="" />
-        <p class="text-center">Figma</p>
-        <p class="text-xs">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
-          repudiandae blanditiis quo,
-        </p>
-      </div>
-      <div
-        class="space-y-1 w-52 h-64 p-7 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
-      >
-        <img :src="'icons/vue.png'" class="w-20" alt="" />
-        <p class="text-center">VueJS</p>
-        <p class="text-xs">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
-          repudiandae blanditiis quo,
-        </p>
+        <div>
+          <p class="text-center">Photoshop</p>
+          <div class="flex justify-center">
+            <span v-for="n in 3" :key="n" class="text-yellow-500 star">
+              <i :class="n <= 5 ? 'fas fa-star' : 'far fa-star'"></i>
+            </span>
+          </div>
+        </div>
       </div>
 
-      <div
-        class="space-y-1 w-52 h-64 p-6 bg-white border border-gray-200 rounded-lg shadow-sm transition duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center"
-      >
-        <img :src="'icons/vue.png'" class="w-20" alt="" />
-        <p class="text-center">VueJS</p>
-        <p class="text-xs">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
-          repudiandae blanditiis quo,
-        </p>
+      <div class="flex flex-row space-x-4 justify-center items-center">
+        <img :src="'icons/canva.png'" class="w-16" alt="" />
+        <div>
+          <p class="text-center">Canva</p>
+          <div class="flex justify-center">
+            <span v-for="n in 5" :key="n" class="text-yellow-500 star">
+              <i :class="n <= 5 ? 'fas fa-star' : 'far fa-star'"></i>
+            </span>
+          </div>
+        </div>
       </div>
+  
+      <div class="flex flex-row space-x-4 justify-center items-center">
+        <img :src="'icons/figma.webp'" class="w-20" alt="" />
+        <div>
+          <p class="text-center">Figma</p>
+          <div class="flex justify-center">
+            <span v-for="n in 4" :key="n" class="text-yellow-500 star">
+              <i :class="n <= 5 ? 'fas fa-star' : 'far fa-star'"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -258,7 +246,6 @@
           </p>
         </div>
       </Slide>
-
     </Carousel>
   </div>
 </template>
