@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Zander Roi Tabelona',
+      title: 'Zander - Portfolio',
       meta: [
         { name: 'description', content: 'Your app description' }
       ],
