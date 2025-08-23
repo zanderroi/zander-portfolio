@@ -87,11 +87,12 @@
     <p><a href="/" class="text-gray-400 text-xs">linkedin.com/zndrroi</a></p>
     <p><a href="/" class="text-gray-400 text-xs">github.com/zndrroi</a></p>
   </footer>
+  <Analytics />
 </template>
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
-
+import { Analytics } from "@vercel/analytics/nuxt";
 const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 0);
 const dropdownOpen = ref(false);
 const tooltipVisible = ref(false);
