@@ -3,7 +3,7 @@
     <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded mb-4">
       🚧 Website under construction. Updates coming soon!
     </div>
-    <div class="flex flex-row space-x-8 justify-center items-center p-2 md:p-4">
+    <div class="flex flex-col space-y-4 md:flex-row md:space-x-8 justify-center items-center p-2 md:p-4">
       <div
         class="bg-white p-4 rounded-xl max-w-3xl animate-slideInLeft h-auto shadow-xl shadow-gray-300"
       >
@@ -13,7 +13,9 @@
           <div class="w-4 h-4 rounded-full bg-green-500"></div>
         </div>
 
-        <h1 class="text-gray-800 text-lg md:text-3xl mt-2 mb-4">Hi, I'm Zander!</h1>
+        <h1 class="text-gray-800 text-lg md:text-3xl mt-2 mb-4">
+          Hi, I'm Zander!
+        </h1>
         <p class="text-gray-600 text-sm md:text-md mb-4">
           I’m a web developer and data analyst passionate about building
           user-friendly websites and data-driven solutions. I also create
@@ -24,9 +26,7 @@
           <font-awesome-icon icon="circle-info" class="mr-2" />Learn more
         </button> -->
       </div>
-      <div
-        class="hidden md:block md:w-full h-64 justify-center items-center"
-      >
+      <div class="block md:w-full h-64 justify-center items-center">
         <div
           class="w-64 h-64 p-1 bg-orange-500 shadow-xl rounded-[40%] overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_#f97316]"
         >
@@ -208,45 +208,108 @@
   </div>
 
   <!-- Carousel -->
-  <div class="relative px-4 sm:px-8 py-8 flex flex-col items-center mt-4">
+  <div class="px-4 sm:px-8 py-8 flex flex-col justify-center items-center mt-4">
     <h3 class="text-4xl text-center font-semibold text-gray-800">Projects</h3>
-    <Carousel
-      :items-to-show="itemsToShow"
-      :items-to-scroll="1"
-      class="mt-4 w-full"
+    <Swiper
+      :modules="[Navigation]"
+      :slides-per-view="1"
+      :space-between="20"
+      :breakpoints="{ 768: { slidesPerView: 2 } }"
+      navigation
+      class="mt-4 w-full flex justify-center"
     >
-      <Slide>
+      <SwiperSlide>
         <div
-          class="box space-y-1 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-72 p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center"
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
         >
-          <img :src="'icons/canva.png'" class="w-20" alt="" />
-          <p class="text-center">Canva</p>
-          <p class="text-xs">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
-            repudiandae blanditiis quo,
-          </p>
+          <div class="relative overflow-hidden rounded-t-xl h-56">
+            <img
+              :src="'images/Tara.png'"
+              alt="Car Rental Website"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-4 flex flex-col space-y-2 flex-1">
+            <a
+              href="https://tara-rentals-front.vercel.app/#/"
+              target="_blank"
+              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
+            >
+              <i class="fa fa-link"></i>
+              Car Rental Website
+            </a>
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4">
+              A modern car rental platform with a responsive interface, booking
+              management, and user-friendly design.
+            </p>
+          </div>
         </div>
-      </Slide>
-      <Slide>
+      </SwiperSlide>
+
+      <SwiperSlide>
         <div
-          class="box space-y-1 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-72 p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center"
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
         >
-          <img :src="'icons/canva.png'" class="w-20" alt="" />
-          <p class="text-center">Canva</p>
-          <p class="text-xs">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
-            repudiandae blanditiis quo,
-          </p>
+          <div class="relative overflow-hidden rounded-t-xl h-56">
+            <img
+              :src="'images/cultural.png'"
+              alt="Cultural Storytelling Website"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-4 flex flex-col space-y-2 flex-1">
+            <a
+              href="https://rural-royalties-iteration3.vercel.app/"
+              target="_blank"
+              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
+            >
+              <i class="fa fa-link"></i>
+              Cultural Storytelling Website
+            </a>
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4">
+              A digital platform that amplifies the voices and stories of
+              Pampanga’s drag queens, highlighting culture, identity, and
+              community through engaging visuals and narratives.
+            </p>
+          </div>
         </div>
-      </Slide>
-    </Carousel>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
+        >
+          <div class="relative overflow-hidden rounded-t-xl h-56">
+            <img
+              :src="'images/Tara.png'"
+              alt="Analytics Dashboard"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-4 flex flex-col space-y-2 flex-1">
+            <a
+              href="https://tara-rentals-front.vercel.app/#/"
+              target="_blank"
+              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
+            >
+              <i class="fa fa-link"></i>
+              Analytics Dashboard
+            </a>
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4">
+              An interactive dashboard for visualizing business metrics, featuring dynamic charts, filters, and exportable reports for insightful decision-making.
+            </p>
+          </div>
+        </div>
+      </SwiperSlide>
+    </Swiper>
   </div>
 </template>
 
 <script setup>
-import ThreeDIcon from "@/components/ThreeDIcon.vue";
-import "vue3-carousel/carousel.css";
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 import { ref, computed, onMounted, onUnmounted } from "vue";
 
 definePageMeta({
@@ -272,7 +335,22 @@ onUnmounted(() => {
 
 <style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+.swiper-button-prev,
+.swiper-button-next {
+  top: 40%; /* vertically aligned */
+  color: #f97316; /* orange-500 */
+  background: white;
+  border-radius: 9999px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px; /* arrow size */
+  font-weight: bold;
+}
 .star {
   animation: glow 1s infinite alternate;
 }
