@@ -42,6 +42,211 @@
     </div>
   </div>
 
+  <!-- Carousel -->
+  <div class="px-4 sm:px-8 py-8 flex flex-col justify-center items-center mt-4">
+    <h3 class="text-4xl text-center font-semibold text-gray-800">Projects</h3>
+    <Swiper
+      :modules="[Navigation]"
+      :slides-per-view="1"
+      :space-between="20"
+      :breakpoints="{ 768: { slidesPerView: 3 } }"
+      navigation
+      class="mt-4 w-full flex justify-center"
+    >
+      <SwiperSlide>
+        <div
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
+        >
+          <div class="relative overflow-hidden rounded-t-xl h-56">
+            <img
+              :src="'images/bsrs.png'"
+              alt="Biometric Attendance System"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-4 flex flex-col space-y-2 flex-1">
+            <a
+              href="https://bsrs.tesda.gov.ph/"
+              target="_blank"
+              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline"
+            >
+              <i class="fa fa-link"></i>
+              Biometric Attendance System
+            </a>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5"
+            >
+              A
+              <span class="text-orange-500">Laravel-based</span> Biometric
+              Scholarship Registration System for TESDA. While not part of the
+              initial development, I was responsible for system enhancements and
+              implementing additional features.
+            </p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
+        >
+          <div class="relative overflow-hidden rounded-t-xl h-56">
+            <img
+              :src="'images/inventory.png'"
+              alt="Inventory Management System"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-4 flex flex-col space-y-2 flex-1">
+            <a
+              href="#"
+              target="_blank"
+              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline"
+            >
+              <i class="fa fa-link"></i>
+              Inventory Management System
+            </a>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5"
+            >
+              A full-stack <span class="text-orange-500">Laravel</span> and
+              <span class="text-orange-500">NuxtJS</span> powered inventory
+              system developed for the Philippine Merchant Marine Academy,
+              enabling efficient tracking, management, and reporting of
+              government-owned assets.
+            </p>
+          </div>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
+        >
+          <div class="relative overflow-hidden rounded-t-xl h-56">
+            <img
+              :src="'images/registrar.jpeg'"
+              alt="Registrar Management System"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-4 flex flex-col space-y-2 flex-1">
+            <a
+              href="#"
+              target="_blank"
+              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline"
+            >
+              <i class="fa fa-link"></i>
+              Registrar Management System
+            </a>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5"
+            >
+              A full-stack <span class="text-orange-500">Laravel</span> and
+              <span class="text-orange-500">NuxtJS</span> powered registrar
+              system developed for the Philippine Merchant Marine Academy,
+              designed to streamline student records, enrollment processes, and
+              academic reporting.
+            </p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
+        >
+          <div class="relative overflow-hidden rounded-t-xl h-56">
+            <img
+              :src="'images/Tara.png'"
+              alt="Car Rental Website"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-4 flex flex-col space-y-2 flex-1">
+            <a
+              href="https://tara-rentals-front.vercel.app/#/"
+              target="_blank"
+              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
+            >
+              <i class="fa fa-link"></i>
+              Car Rental Website
+            </a>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4"
+            >
+              A modern car rental platform built using
+              <span class="text-orange-500">VueJS</span> with a responsive
+              interface, booking management, and user-friendly design.
+            </p>
+          </div>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
+        >
+          <div class="relative overflow-hidden rounded-t-xl h-56">
+            <img
+              :src="'images/cultural.png'"
+              alt="Cultural Storytelling Website"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-4 flex flex-col space-y-2 flex-1">
+            <a
+              href="https://rural-royalties-iteration3.vercel.app/"
+              target="_blank"
+              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline"
+            >
+              <i class="fa fa-link"></i>
+              Cultural Storytelling Website
+            </a>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5"
+            >
+              A digital platform built using
+              <span class="text-orange-500">NuxtJS</span> that amplifies the
+              voices and stories of Pampanga’s drag queens, highlighting
+              culture, identity, and community through engaging visuals and
+              narratives.
+            </p>
+          </div>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
+        >
+          <div class="relative overflow-hidden rounded-t-xl h-56">
+            <img
+              :src="'images/mobile-app-design.png'"
+              alt="Analytics Dashboard"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-4 flex flex-col space-y-2 flex-1">
+            <a
+              href="https://www.figma.com/design/mYFP0GnK54Ph2gwk7ySy30/TARA-Mobile-App?node-id=1-2&t=cxpxy2TirU1UPegk-1"
+              target="_blank"
+              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
+            >
+              <i class="fa fa-link"></i>
+              Mobile App - UI/UX
+            </a>
+            <p
+              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4"
+            >
+              A <span class="text-orange-500">Figma-based</span> mockup of a
+              modern car rental mobile app, designed with a clean interface for
+              easy booking, car browsing, and user-friendly navigation.
+            </p>
+          </div>
+        </div>
+      </SwiperSlide>
+    </Swiper>
+  </div>
+
   <div
     class="flex flex-col justify-center items-center p-2"
     style="min-height: 30rem"
@@ -209,210 +414,10 @@
     </div>
   </div>
 
-  <!-- Carousel -->
-  <div class="px-4 sm:px-8 py-8 flex flex-col justify-center items-center mt-4">
-    <h3 class="text-4xl text-center font-semibold text-gray-800">Projects</h3>
-    <Swiper
-      :modules="[Navigation]"
-      :slides-per-view="1"
-      :space-between="20"
-      :breakpoints="{ 768: { slidesPerView: 2 } }"
-      navigation
-      class="mt-4 w-full flex justify-center"
-    >
-      <SwiperSlide>
-        <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
-          <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/bsrs.png'"
-              alt="Biometric Attendance System"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="https://bsrs.tesda.gov.ph/"
-              target="_blank"
-              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
-            >
-              <i class="fa fa-link"></i>
-              Biometric Attendance System
-            </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4"
-            >
-              A government-owned
-              <span class="text-orange-500">Laravel-based</span> Biometric
-              Scholarship Registration System for TESDA. While not part of the
-              initial development, I was responsible for system enhancements and
-              implementing additional features.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
-          <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/inventory.png'"
-              alt="Inventory Management System"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="#"
-              target="_blank"
-              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
-            >
-              <i class="fa fa-link"></i>
-              Inventory Management System
-            </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4"
-            >
-              A full-stack <span class="text-orange-500">Laravel</span> and
-              <span class="text-orange-500">NuxtJS</span> powered inventory
-              system developed for the Philippine Merchant Marine Academy,
-              enabling efficient tracking, management, and reporting of
-              government-owned assets.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
-          <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/registrar.jpeg'"
-              alt="Registrar Management System"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="#"
-              target="_blank"
-              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
-            >
-              <i class="fa fa-link"></i>
-              Registrar Management System
-            </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4"
-            >
-              A full-stack <span class="text-orange-500">Laravel</span> and
-              <span class="text-orange-500">NuxtJS</span> powered registrar
-              system developed for the Philippine Merchant Marine Academy,
-              designed to streamline student records, enrollment processes, and
-              academic reporting.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
-          <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/Tara.png'"
-              alt="Car Rental Website"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="https://tara-rentals-front.vercel.app/#/"
-              target="_blank"
-              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
-            >
-              <i class="fa fa-link"></i>
-              Car Rental Website
-            </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4"
-            >
-              A modern car rental platform built using
-              <span class="text-orange-500">VueJS</span> with a responsive
-              interface, booking management, and user-friendly design.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
-          <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/cultural.png'"
-              alt="Cultural Storytelling Website"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="https://rural-royalties-iteration3.vercel.app/"
-              target="_blank"
-              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
-            >
-              <i class="fa fa-link"></i>
-              Cultural Storytelling Website
-            </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4"
-            >
-              A digital platform built using
-              <span class="text-orange-500">NuxtJS</span> that amplifies the
-              voices and stories of Pampanga’s drag queens, highlighting
-              culture, identity, and community through engaging visuals and
-              narratives.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
-          <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/mobile-app-design.png'"
-              alt="Analytics Dashboard"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="https://www.figma.com/design/mYFP0GnK54Ph2gwk7ySy30/TARA-Mobile-App?node-id=1-2&t=cxpxy2TirU1UPegk-1"
-              target="_blank"
-              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
-            >
-              <i class="fa fa-link"></i>
-              Mobile App - UI/UX
-            </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4"
-            >
-              A <span class="text-orange-500">Figma-based</span> mockup of a
-              modern car rental mobile app, designed with a clean interface for
-              easy booking, car browsing, and user-friendly navigation.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-    </Swiper>
-  </div>
+  <h3 class="text-4xl mt-12 mb-4 text-center font-semibold text-gray-800">
+    Recent Activity on GitHub
+  </h3>
+  <GithubStats />
 </template>
 
 <script setup>
@@ -421,6 +426,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ref, computed, onMounted, onUnmounted } from "vue";
+import GithubStats from "~/components/GithubStats.vue";
 
 definePageMeta({
   layout: "default",
