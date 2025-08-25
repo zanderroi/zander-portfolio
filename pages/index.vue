@@ -28,7 +28,7 @@
           <font-awesome-icon icon="circle-info" class="mr-2" />Learn more
         </button> -->
       </div>
-      <div class="block md:w-full h-64 justify-center items-center">
+      <div class="hidden md:block md:w-full h-64 justify-center items-center">
         <div
           class="w-64 h-64 p-1 bg-orange-500 shadow-xl rounded-[40%] overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_#f97316]"
         >
