@@ -24,9 +24,38 @@
           content through video editing and manage social media to boost online
           presence.
         </p>
-        <!-- <button class="bg-indigo-700 px-4 py-2 rounded-md text-white hover:bg-gray-800">
-          <font-awesome-icon icon="circle-info" class="mr-2" />Learn more
-        </button> -->
+        <!-- Button to view the CV -->
+        <button
+          class="bg-indigo-700 px-4 py-2 rounded-md text-white hover:bg-gray-800"
+          @click="showCV"
+        >
+          <font-awesome-icon icon="circle-info" class="mr-2" />View CV
+        </button>
+
+        <!-- Modal -->
+        <div
+          v-if="isCVVisible"
+          class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+        >
+          <div
+            class="bg-white w-full max-w-3xl p-4 rounded-md shadow-lg relative"
+          >
+            <!-- Close button -->
+            <button
+              class="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
+              @click="closeCV"
+            >
+              <font-awesome-icon icon="times" />
+            </button>
+
+            <!-- Iframe to display the PDF -->
+            <iframe
+              :src="'file/cv.pdf'"
+              class="w-full h-[500px] border rounded-md"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
       </div>
       <div class="hidden md:block md:w-full h-64 justify-center items-center">
         <div
@@ -425,7 +454,7 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { ref, computed, onMounted, onUnmounted } from "vue";
+import { ref, computed, onMounted, onUnmounted, watch } from "vue";
 import GithubStats from "~/components/GithubStats.vue";
 
 definePageMeta({
@@ -435,6 +464,29 @@ definePageMeta({
 const windowWidth = ref(typeof window !== "undefined" ? window.innerWidth : 0);
 
 const itemsToShow = computed(() => (windowWidth.value < 768 ? 1 : 2));
+
+// Reactive state for controlling iframe visibility
+const isCVVisible = ref(false);
+
+// URL of the CV PDF
+const cvUrl = "/path/to/your-cv.pdf"; // Replace with the actual path to your PDF
+
+// Method to show the CV
+const showCV = () => {
+  isCVVisible.value = true;
+};
+
+const closeCV = () => {
+  isCVVisible.value = false;
+};
+
+watch(isCVVisible, (newValue) => {
+  if (newValue) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
+});
 
 const handleResize = () => {
   windowWidth.value = window.innerWidth;
