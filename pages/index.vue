@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col justify-center items-center p-2">
-    <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded mb-4">
+    <!-- <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded mb-4">
       🚧 Website under construction. Updates coming soon!
-    </div>
+    </div> -->
     <div
       class="flex flex-col space-y-4 md:flex-row md:space-x-8 justify-center items-center p-2 md:p-4"
     >
