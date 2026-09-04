@@ -3,12 +3,8 @@
     <!-- <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded mb-4">
       🚧 Website under construction. Updates coming soon!
     </div> -->
-    <div
-      class="flex flex-col space-y-4 md:flex-row md:space-x-8 justify-center items-center p-2 md:p-4"
-    >
-      <div
-        class="bg-white p-4 rounded-xl max-w-3xl animate-slideInLeft h-auto shadow-xl shadow-gray-300"
-      >
+    <div class="flex flex-col space-y-4 md:flex-row md:space-x-8 justify-center items-center p-2 md:p-4">
+      <div class="bg-white p-4 rounded-xl max-w-3xl animate-slideInLeft h-auto shadow-xl shadow-gray-300">
         <div class="flex space-x-2 border-b border-gray-300 pb-4">
           <div class="w-4 h-4 rounded-full bg-red-500"></div>
           <div class="w-4 h-4 rounded-full bg-yellow-500"></div>
@@ -19,53 +15,32 @@
           Hi, I'm Zander!
         </h1>
         <p class="text-gray-600 text-sm md:text-md mb-4">
-          I’m a web developer and data analyst passionate about building
-          user-friendly websites and data-driven solutions. I also create
-          content through video editing and manage social media to boost online
-          presence.
+          I’m an IT Project Manager specializing in translating complex business requirements into high-impact digital
+          solutions. Leveraging hands-on development experience, I bridge technical execution and stakeholder strategy
+          to keep projects on track.
         </p>
         <!-- Button to view the CV -->
-        <button
-          class="bg-indigo-700 px-4 py-2 rounded-md text-white hover:bg-gray-800"
-          @click="showCV"
-        >
+        <button class="bg-indigo-700 px-4 py-2 rounded-md text-white hover:bg-gray-800" @click="showCV">
           <font-awesome-icon icon="circle-info" class="mr-2" />View CV
         </button>
 
         <!-- Modal -->
-        <div
-          v-if="isCVVisible"
-          class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
-        >
-          <div
-            class="bg-white w-full max-w-3xl p-4 rounded-md shadow-lg relative"
-          >
+        <div v-if="isCVVisible" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div class="bg-white w-full max-w-3xl p-4 rounded-md shadow-lg relative">
             <!-- Close button -->
-            <button
-              class="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
-              @click="closeCV"
-            >
+            <button class="absolute top-2 right-2 text-gray-600 hover:text-gray-800" @click="closeCV">
               <font-awesome-icon icon="times" />
             </button>
 
             <!-- Iframe to display the PDF -->
-            <iframe
-              :src="'file/cv.pdf'"
-              class="w-full h-[500px] border rounded-md"
-              frameborder="0"
-            ></iframe>
+            <iframe :src="'file/cv.pdf'" class="w-full h-[500px] border rounded-md" frameborder="0"></iframe>
           </div>
         </div>
       </div>
       <div class="hidden md:block md:w-full h-64 justify-center items-center">
         <div
-          class="w-64 h-64 p-1 bg-orange-500 shadow-xl rounded-[40%] overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_#f97316]"
-        >
-          <img
-            :src="'/images/profile.jpg'"
-            alt="Zander"
-            class="w-full h-full object-cover rounded-[40%]"
-          />
+          class="w-64 h-64 p-1 bg-orange-500 shadow-xl rounded-[40%] overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_#f97316]">
+          <img :src="'/images/profile.jpg'" alt="Zander" class="w-full h-full object-cover rounded-[40%]" />
         </div>
       </div>
     </div>
@@ -74,37 +49,22 @@
   <!-- Carousel -->
   <div class="px-4 sm:px-8 py-8 flex flex-col justify-center items-center mt-4">
     <h3 class="text-4xl text-center font-semibold text-gray-800">Projects</h3>
-    <Swiper
-      :modules="[Navigation]"
-      :slides-per-view="1"
-      :space-between="20"
-      :breakpoints="{ 768: { slidesPerView: 3 } }"
-      navigation
-      class="mt-4 w-full flex justify-center"
-    >
+    <Swiper :modules="[Navigation]" :slides-per-view="1" :space-between="20"
+      :breakpoints="{ 768: { slidesPerView: 3 } }" navigation class="mt-4 w-full flex justify-center">
       <SwiperSlide>
         <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]">
           <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/bsrs.png'"
-              alt="Biometric Attendance System"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
+            <img :src="'images/bsrs.png'" alt="Biometric Attendance System"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110" />
           </div>
           <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="https://bsrs.tesda.gov.ph/"
-              target="_blank"
-              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline"
-            >
+            <a href="https://bsrs.tesda.gov.ph/" target="_blank"
+              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline">
               <i class="fa fa-link"></i>
               Biometric Attendance System
             </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5"
-            >
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5">
               A
               <span class="text-orange-500">Laravel-based</span> Biometric
               Scholarship Registration System for TESDA. While not part of the
@@ -116,27 +76,18 @@
       </SwiperSlide>
       <SwiperSlide>
         <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]">
           <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/inventory.png'"
-              alt="Inventory Management System"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
+            <img :src="'images/inventory.png'" alt="Inventory Management System"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110" />
           </div>
           <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="#"
-              target="_blank"
-              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline"
-            >
+            <a href="#" target="_blank"
+              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline">
               <i class="fa fa-link"></i>
               Inventory Management System
             </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5"
-            >
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5">
               A full-stack <span class="text-orange-500">Laravel</span> and
               <span class="text-orange-500">NuxtJS</span> powered inventory
               system developed for the Philippine Merchant Marine Academy,
@@ -149,27 +100,18 @@
 
       <SwiperSlide>
         <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]">
           <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/registrar.jpeg'"
-              alt="Registrar Management System"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
+            <img :src="'images/registrar.jpeg'" alt="Registrar Management System"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110" />
           </div>
           <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="#"
-              target="_blank"
-              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline"
-            >
+            <a href="#" target="_blank"
+              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline">
               <i class="fa fa-link"></i>
               Registrar Management System
             </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5"
-            >
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5">
               A full-stack <span class="text-orange-500">Laravel</span> and
               <span class="text-orange-500">NuxtJS</span> powered registrar
               system developed for the Philippine Merchant Marine Academy,
@@ -181,27 +123,18 @@
       </SwiperSlide>
       <SwiperSlide>
         <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]">
           <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/Tara.png'"
-              alt="Car Rental Website"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
+            <img :src="'images/Tara.png'" alt="Car Rental Website"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110" />
           </div>
           <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="https://tara-rentals-front.vercel.app/#/"
-              target="_blank"
-              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
-            >
+            <a href="https://tara-rentals-front.vercel.app/#/" target="_blank"
+              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline">
               <i class="fa fa-link"></i>
               Car Rental Website
             </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4"
-            >
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4">
               A modern car rental platform built using
               <span class="text-orange-500">VueJS</span> with a responsive
               interface, booking management, and user-friendly design.
@@ -212,27 +145,18 @@
 
       <SwiperSlide>
         <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]">
           <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/cultural.png'"
-              alt="Cultural Storytelling Website"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
+            <img :src="'images/cultural.png'" alt="Cultural Storytelling Website"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110" />
           </div>
           <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="https://rural-royalties-iteration3.vercel.app/"
-              target="_blank"
-              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline"
-            >
+            <a href="https://rural-royalties-iteration3.vercel.app/" target="_blank"
+              class="text-orange-500 font-bold text-md flex items-center gap-2 hover:underline">
               <i class="fa fa-link"></i>
               Cultural Storytelling Website
             </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5"
-            >
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-5">
               A digital platform built using
               <span class="text-orange-500">NuxtJS</span> that amplifies the
               voices and stories of Pampanga’s drag queens, highlighting
@@ -245,27 +169,18 @@
 
       <SwiperSlide>
         <div
-          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]"
-        >
+          class="group relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col h-[25rem]">
           <div class="relative overflow-hidden rounded-t-xl h-56">
-            <img
-              :src="'images/mobile-app-design.png'"
-              alt="Analytics Dashboard"
-              class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
-            />
+            <img :src="'images/mobile-app-design.png'" alt="Analytics Dashboard"
+              class="w-full h-full object-cover transition duration-300 group-hover:scale-110" />
           </div>
           <div class="p-4 flex flex-col space-y-2 flex-1">
-            <a
-              href="https://www.figma.com/design/mYFP0GnK54Ph2gwk7ySy30/TARA-Mobile-App?node-id=1-2&t=cxpxy2TirU1UPegk-1"
-              target="_blank"
-              class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline"
-            >
+            <a href="https://www.figma.com/design/mYFP0GnK54Ph2gwk7ySy30/TARA-Mobile-App?node-id=1-2&t=cxpxy2TirU1UPegk-1"
+              target="_blank" class="text-orange-500 font-bold text-lg flex items-center gap-2 hover:underline">
               <i class="fa fa-link"></i>
               Mobile App - UI/UX
             </a>
-            <p
-              class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4"
-            >
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-snug line-clamp-4">
               A <span class="text-orange-500">Figma-based</span> mockup of a
               modern car rental mobile app, designed with a clean interface for
               easy booking, car browsing, and user-friendly navigation.
@@ -276,21 +191,14 @@
     </Swiper>
   </div>
 
-  <div
-    class="flex flex-col justify-center items-center p-2"
-    style="min-height: 30rem"
-  >
+  <div class="flex flex-col justify-center items-center p-2" style="min-height: 30rem">
     <h3 class="text-4xl text-center font-semibold text-gray-800 mb-8 mt-8">
       Tech Stacks
     </h3>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/css.png'" class="w-10" alt="CSS" />
         </div>
         <p class="font-semibold">CSS</p>
@@ -299,12 +207,8 @@
         </p>
       </div>
 
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/html.png'" class="w-10" alt="HTML" />
         </div>
         <p class="font-semibold">HTML</p>
@@ -313,12 +217,8 @@
         </p>
       </div>
 
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/laravel.png'" class="w-10" alt="Laravel" />
         </div>
         <p class="font-semibold">Laravel</p>
@@ -327,12 +227,8 @@
         </p>
       </div>
 
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/vue.png'" class="w-10" alt="VueJS" />
         </div>
         <p class="font-semibold">VueJS</p>
@@ -341,12 +237,8 @@
         </p>
       </div>
 
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/wordpress.png'" class="w-10" alt="Wordpress" />
         </div>
         <p class="font-semibold">Wordpress</p>
@@ -355,24 +247,16 @@
         </p>
       </div>
 
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/aws.png'" class="w-10" alt="AWS" />
         </div>
         <p class="font-semibold">AWS</p>
         <p class="text-xs text-gray-500 text-center">Basic deployment & S3</p>
       </div>
 
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/mysql.png'" class="w-10" alt="MySQL" />
         </div>
         <p class="font-semibold">MySQL</p>
@@ -389,12 +273,8 @@
     </h3>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/pr.png'" class="w-10" alt="Premiere Pro" />
         </div>
         <p class="font-semibold">Premiere Pro</p>
@@ -403,36 +283,24 @@
         </p>
       </div>
 
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/ps.png'" class="w-10" alt="Photoshop" />
         </div>
         <p class="font-semibold">Photoshop</p>
         <p class="text-xs text-gray-500 text-center">Graphic design & assets</p>
       </div>
 
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/canva.png'" class="w-10" alt="Canva" />
         </div>
         <p class="font-semibold">Canva</p>
         <p class="text-xs text-gray-500 text-center">Social media content</p>
       </div>
 
-      <div
-        class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition"
-      >
-        <div
-          class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition">
+        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
           <img :src="'icons/figma.webp'" class="w-10" alt="Figma" />
         </div>
         <p class="font-semibold">Figma</p>
@@ -503,10 +371,13 @@ onUnmounted(() => {
 
 <style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
 .swiper-button-prev,
 .swiper-button-next {
-  top: 40%; /* vertically aligned */
-  color: #f97316; /* orange-500 */
+  top: 40%;
+  /* vertically aligned */
+  color: #f97316;
+  /* orange-500 */
   background: white;
   border-radius: 9999px;
   width: 40px;
@@ -516,9 +387,11 @@ onUnmounted(() => {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 18px; /* arrow size */
+  font-size: 18px;
+  /* arrow size */
   font-weight: bold;
 }
+
 .star {
   animation: glow 1s infinite alternate;
 }
@@ -528,6 +401,7 @@ onUnmounted(() => {
     text-shadow: 0 0 1px yellow, 0 0 1px yellow, 0 0 2px yellow, 0 0 3px yellow;
     /* opacity: 1; */
   }
+
   to {
     text-shadow: 0 0 5px yellow, 0 0 5px yellow, 0 0 6px yellow, 0 0 7px yellow;
     /* opacity: 0; */
@@ -543,23 +417,19 @@ onUnmounted(() => {
   /* text-shadow: 0 1px 0 #000; */
 
   --border-angle: 0turn;
-  --main-bg: conic-gradient(
-    from var(--border-angle),
-    #ffff,
-    #ffff 5%,
-    #ffff 60%,
-    #ffff 95%
-  );
+  --main-bg: conic-gradient(from var(--border-angle),
+      #ffff,
+      #ffff 5%,
+      #ffff 60%,
+      #ffff 95%);
 
   border: solid 5px transparent;
   border-radius: 2em;
-  --gradient-border: conic-gradient(
-    from var(--border-angle),
-    transparent 25%,
-    rgb(255, 72, 0),
-    rgb(255, 128, 0) 99%,
-    transparent
-  );
+  --gradient-border: conic-gradient(from var(--border-angle),
+      transparent 25%,
+      rgb(255, 72, 0),
+      rgb(255, 128, 0) 99%,
+      transparent);
 
   background: var(--main-bg) padding-box, var(--gradient-border) border-box,
     var(--main-bg) border-box;
@@ -567,6 +437,7 @@ onUnmounted(() => {
   background-position: center center;
 
   animation: bg-spin 3s linear infinite;
+
   @keyframes bg-spin {
     to {
       --border-angle: 1turn;
